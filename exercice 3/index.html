@@ -40,34 +40,36 @@
       }
 
 
-      function pourcentage ("valeur", "pourcentage") {
-        return ((pourcentage / 100) * valeur);
+
+
+      function pourcentage (a,b) {
+        if (b === undefined) {
+          b = 1
+        }
+        return ((a / 100) * b) + "%"
       }
-        console.log ((pourcentage / 100) * valeur)
+
+
+
+
+      var a = prompt ("Premier nombre?");
+      var b = prompt ("Second nombre?");
+
+      var result = ((a / 100) * b);
+      console.log (result + "%");
+
+
+
+      var vitesse = function (distance, temps) {
+        return (distance / temps)
+      }
+
+        console.log(vitesse(100,2) + "km/h");
 
 
 
 
 
-                function calcul (distance, temps) {
-                var distance = "km";
-                var temps = "h";
-                }
-                console.log (50 + distance / temps)
-
-
-
-
-
-
-
-
-
-                var Pourcentage1 = function (valeur, 100) {
-                 var first = division (valeur, 100);
-                 var result = multiplication (first, valeur);
-                 return result;
-             }
 
 
 
