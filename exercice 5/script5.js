@@ -73,30 +73,29 @@ if acteur [0] {
 
   var perso = ["Mario", "Luigi", "Peach"];
   var nintendo = perso.slice(0);
-  perso.push ('Browser');
+  nintendo.push ('Browser');
   console.log (perso);
   console.log (nintendo);
 
 
+
 /*
-  for (var i=0; i < perso.length; i++){
-  var nintendo = perso;
-  perso.copyWithin (perso);
+Je présente mon tableau de perso
+ensuite je presente mon deuxieme tableau
+nintendo= perso.slice(0);
+Signifie que le slice ne clone pas,
+SLICE => c'est uné méthode de copie !!!! pas un clone
+le 0 dans le slice signifie que c'est à partir de ce caractere
+qu'il va coupé
+
+nintendo.push !!!!! Attention, c'est ici dans le
+deuxieme tableau que j'apporte un nouvel élément 'Browser'
 
 
 
-/* perso.push
+nintendo.push
 en ajoutant .push => c'est pour ajouter a notre tableau
 un nouveau perso;
 et on fait console.log pour lire le tableau.
-
-Voici un exemple où on ajoute des éléments dans un tableau.
-On fait une itération sur chaque élément du tableau,
-en passant chaque nom dans une fonction appelée jeux.
-jeux renvoie un caratere nom.
-
-
-SLICE => est une méthode de copie !!! pas un clone!
-
 
  */
