@@ -75,6 +75,12 @@ console.log (voleBateau);
 
 
 
-var chiffre = [50, 100];
-var binaire = (0. 1);
-var nombre = [0, 10];
+
+
+
+
+
+
+
+var aleatoire = Math.random (0, 1);
+console.log(aleatoire);
