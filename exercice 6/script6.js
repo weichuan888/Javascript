@@ -13,62 +13,39 @@ tableau.includes(pendu);
 
 
 
+if (tableau.includes(pendu)) {
+  console.log("Bravo, vous avez trouvé une lettre!")
+
+}
+  else {
+    console.log ("Mauvaise lettre, réessayer!")
+}
 
 
 
 
 
+function guessLetter (){
 
-
-/*
-function guessLetter () {
-
-
-    if (tableau[i] = true) {
-      window.confirm ("Vous avez trouvé une lettre!")
-    }
-    else
-      window.confirm ("Mauvaise réponse, réessayer!")
-
-    }
-
-
-var correct = "tableau[i]";
-
-
-
-*/
+for (var i=0; i<tableau.length; i++) {
+  var table = (tableau[i]);
+  console.log (table)
 
 
 
 
-/*
 
-
-for (var i=0; i <tableau.length; i++) {
-  window.alert( tableau[i]);
-
-
-
-  if ( fin = false) {
-    window.confirm("Mauvaise réponse, réessayer!")
-  }
+  if (table = true) {
+  console.log("Bien joué")
+}
 
   else {
-    window.confirm ("Vous avez trouvé la lettre!")
+    console.log("perdu")
+  }
+
 }
+
+
 }
 
-
-
-
-
-
-var canvas = "BONJOUR";
-
- if (canvas) {
-   alert ("Bravo!");
- } else {
-   alert ("Dommage!");
- }
-*/
+  guessLetter()
