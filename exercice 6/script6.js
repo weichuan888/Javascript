@@ -31,20 +31,13 @@ for (var i=0; i<tableau.length; i++) {
   var table = (tableau[i]);
   console.log (table)
 
-
-
-
-
   if (table = true) {
   console.log("Bien joué")
 }
-
   else {
     console.log("perdu")
   }
-
 }
-
 
 }
 
