@@ -1,44 +1,42 @@
 
+alert("Le jeu du pendu, enjoy!");
+
+var tableau = ["B", "O", "N", "J", "O", "U", "R"];
+var tableauVide = ["","","","","","",""];
+var fin = tableau.length; /* => 7*/
+var cpt = 0;
+
+/* Cree une fonction guessLetter */
+while( fin > 0)
+
+    var lettre = prompt ("Choisis ta lettre");
+    input= input.toUppercase();
+/* Iterer a travers les lettres */
+    for (var i=0; i<tableau.length; i++) {
+/* Voir si la lettre deviné se trouve dans le mot */
+        if (tableau[i] == lettre) {
+
+}}
+
+
+
+
+
+
+
 /*
-var table = window.prompt ("Le pendu");
-var tableau = ["B", "O", "N", "J", "O", "U", "R"];
-var canvas = "BONJOUR";
-var pendu = ['',"",'',"",'',"",'_'];
-console.log(pendu);
-var fin = tableau.lenght;
+
+
+          index = tableau.indexOf (lettre);
+
+          tableauVide.slice = (index, 1, lettre);
+          tableauVide.slice = (index, 1, "*");
+          fin--;
+          console.log("bien")
+        }  else {
+          cpt++
+          console.log( "raté")
+
+        }
+}
 */
-var pendu = prompt ("jeux du pendu")
-var tableau = ["B", "O", "N", "J", "O", "U", "R"];
-tableau.includes(pendu);
-
-
-
-if (tableau.includes(pendu)) {
-  console.log("Bravo, vous avez trouvé une lettre!")
-
-}
-  else {
-    console.log ("Mauvaise lettre, réessayer!")
-}
-
-
-
-
-
-function guessLetter (){
-
-for (var i=0; i<tableau.length; i++) {
-  var table = (tableau[i]);
-  console.log (table)
-
-  if (table = true) {
-  console.log("Bien joué")
-}
-  else {
-    console.log("perdu")
-  }
-}
-
-}
-
-  guessLetter()
