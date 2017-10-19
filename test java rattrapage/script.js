@@ -39,37 +39,6 @@
 //
 // console.log(x)
 
-alert ("Le jeu du pendu");
-var mot = ["R", "A", "V", "I", "O", "L","I"];
-var mot_afficher = ["","","","","","",""];
-var fin = mot.length;
-var cpt= 0;
-
-/*
-var lettre = 0;
-var fin = tableau.length;
-tableau.includes
-*/
-function guessLetter(){
-  var trouver = prompt ("Choisis une lettre");
-  trouver= trouver.toUpperCase();
-  console.log (trouver);
-
-  if (trouver.length !=1) {/* verifier celui qui tape la lettre a bien écris dans la case vide*/
-      console.log ("Veuillez écrire une lettre");
-      return trouver
-  }
-  for (var i=0;i<mot.length;i++) {
-    if (trouver == mot[i]) {
-        mot_afficher[i] = trouver;
-        fin--;
-        console.log ("Bien joué");
-
-    }
-  }
-  return cpt;
-}
-guessLetter();
 
 
 
@@ -78,24 +47,6 @@ guessLetter();
 
 
 
-/*
-
-
-
-
-
-    if (cpt = mot.length) {
-      console.log ("gagné!")
-    } else {
-    console.log ("perdu")
-  }
-}
-}
-
-
-guessLetter();
-
-*/
 
 /*
 
@@ -123,16 +74,61 @@ else  {
 }
 
 guessLetter()
+*/
+
+alert("Le jeu du pendu, enjoy!");
+
+var tableau = ["B", "O", "N", "J", "O", "U", "R"];
+var tableauVide = ["","","","","","",""];
+var fin = tableau.length; /* => 7*/
+var cpt = 0;
+
+/* Cree une fonction guessLetter */
+while( fin > 0){
+
+    var input = prompt ("Choisis ta lettre");
+    input=input.toUppercase();
+
+    if(tableau.includes(input)){
+/* Iterer a travers les lettres */
+    for (var i=0; i<tableau.length; i++) {
+/* Voir si la lettre deviné se trouve dans le mot */
+        if (tableau[i] == input) {
+          var index=tableau.indexOf(input);
+          tableauVide.slice(index, 1, input);
+          tableau.slice(index, 1, "*");
+          fin--;
+          console.log(tableauVide)
+          }
+      }
+    }
+
+      else {
+        cpt++;
+        console.log("Erreur, recommence")
+
+      }
+
+}
+
+console.log("Bravo, vous avez gagné!");
+console.log(cpt + " erreur(s)!");
+
+
 
 /*
 
-var index = mot.indexOf ("trouver");
 
-if (trouver == index) {
- console.log ("Bravo, vous avez trouvé une lettre!")
+          index = tableau.indexOf (lettre);
 
-}
-  else {
-    console.log ("Mauvaise lettre, réessayer!")
+          tableauVide.slice = (index, 1, lettre);
+          tableauVide.slice = (index, 1, "*");
+          fin--;
+          console.log("bien")
+        }  else {
+          cpt++
+          console.log( "raté")
+
+        }
 }
 */
