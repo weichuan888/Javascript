@@ -33,62 +33,64 @@ giveItem()
 /* réecrire une var dans la fonction
 */
 
+var objetsVendre= [
 
-var objetsVendre= ["épée", "hache", "sceptre", "salade"];
-var x = 0
 
-var épée = {
+
+{
   title: "Excalibur",
   physic: 140,
   magic: 30,
   minLevel: 5,
-  available: (x),
-};
+  available: true,
+},
 
-var hache = {
+{
   title: "Thor",
   physic: 100,
   magic: 60,
   minLevel: 15,
-  available: "yes",
-};
-
-var sceptre = {
+  available: false,
+},
+{
   title: "pilo",
   physic: 10,
   magic: 150,
   minLevel: 5,
-  available: (x),
-};
+  available: true,
+},
 
-var salade = {
+ {
   title: "King",
   physic: 260,
   magic: 180,
   minLevel: 10,
-  available: (x),
-};
+  available: false,
+}];
 
-for (var O in objetsVendre) {
-  console.log(objetsVendre[O])
+
+function showShop() {
+  for (i.title in objetsVendre) {
+    console.log(objetsVendre[i]);
+
+}
+
 }
 /* faire une fonction pour afficher tout les objets*/
 
 
-for (var available in objetsVendre) {
-  console.log(available)
+
+/*
+
 }
 
-
-
-
-
-
-
-
-
-
-
-for (var o in épée){
-  console.log( o + épée[o])
+function dispo() {
+  if (available.objetsVendre = true) {
+    console.log(available + "est disponible")
+  }
+  else {
+    console.log(available + "est indisponible")
+  }
 }
+dispo()
+*/
