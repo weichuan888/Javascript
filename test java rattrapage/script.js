@@ -113,22 +113,3 @@ while( fin > 0){
 
 console.log("Bravo, vous avez gagné!");
 console.log(cpt + " erreur(s)!");
-
-
-
-/*
-
-
-          index = tableau.indexOf (lettre);
-
-          tableauVide.slice = (index, 1, lettre);
-          tableauVide.slice = (index, 1, "*");
-          fin--;
-          console.log("bien")
-        }  else {
-          cpt++
-          console.log( "raté")
-
-        }
-}
-*/

@@ -33,64 +33,80 @@ giveItem()
 /* réecrire une var dans la fonction
 */
 
+
+
+/* EXERCICE 8B: SHOP */
+
 var objetsVendre= [
 
-
-
-{
-  title: "Excalibur",
-  physic: 140,
-  magic: 30,
-  minLevel: 5,
-  available: true,
+{ title: "épée", physic: 140, magic: 30, minLevel: 5, available: true,
 },
 
-{
-  title: "Thor",
-  physic: 100,
-  magic: 60,
-  minLevel: 15,
-  available: false,
-},
-{
-  title: "pilo",
-  physic: 10,
-  magic: 150,
-  minLevel: 5,
-  available: true,
+{ title: "hache", physic: 100, magic: 60, minLevel: 15, available: false,
 },
 
- {
-  title: "King",
-  physic: 260,
-  magic: 180,
-  minLevel: 10,
-  available: false,
-}];
+{ title: "sceptre", physic: 10, magic: 150, minLevel: 5, available: true,
+},
 
-
-function showShop() {
-  for (i.title in objetsVendre) {
-    console.log(objetsVendre[i]);
-
+{ title: "choux", physic: 260, magic: 180, minLevel: 10, available: false,
 }
+];
 
-}
+
 /* faire une fonction pour afficher tout les objets*/
 
-
-
-/*
-
-}
-
-function dispo() {
-  if (available.objetsVendre = true) {
-    console.log(available + "est disponible")
+  for (var B in objetsVendre) {
+    console.log(objetsVendre[B])
   }
-  else {
-    console.log(available + "est indisponible")
+
+
+/*faire une fonction pour afficher les objets disponibles*/
+
+
+function showShop () {
+    for (var i =0; i<objetsVendre.length; i++){
+      if (objetsVendre[i].available== true){
+        console.log("L'arme " + objetsVendre[i].title + " est disponible")
+      } else {
+        console.log("L'arme " + objetsVendre[i].title + " est indisponible")
+      }
+    }
+}
+showShop()
+
+
+/*faire une fonction pour afficher les objets dont le niveau minimum est de 10*/
+
+function niveau() {
+  for (var i =0; i<objetsVendre.length; i++) {
+    if (objetsVendre[i].minLevel >= 10) {
+      console.log("Le niveau de cette " + objetsVendre[i].title + " est supérieur à 10")
+    } else {
+      console.log("Le niveau de cette " + objetsVendre[i].title + " est inférieur à 10")
+    }
   }
 }
-dispo()
-*/
+niveau()
+
+
+/* EXERCICE 8C : Personnage */
+
+var mainCharacter= [
+{ name: "Womba",
+  level: 20,
+  life: 100,
+  weapon: {
+    name:"pastèque",
+    damage: 1000,
+  },
+  attack: "frapper",
+}
+];
+
+
+function attack () {
+  for (D in mainCharacter) {
+  console.log (name + " attaque avec l'arme " + weapon + " les dégâts sont " + level * life)
+}
+}
+attack()
