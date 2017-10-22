@@ -91,22 +91,18 @@ niveau()
 
 /* EXERCICE 8C : Personnage */
 
-var mainCharacter= [
+var mainCharacter =
 { name: "Womba",
   level: 20,
   life: 100,
   weapon: {
     name:"pastèque",
     damage: 1000,
-  },
-  attack: "frapper",
+  }
 }
-];
 
 
 function attack () {
-  for (D in mainCharacter) {
-  console.log (name + " attaque avec l'arme " + weapon + " les dégâts sont " + level * life)
+
+  console.log (mainCharacter.name + " attaque avec l'arme " + mainCharacter.weapon.name + " les dégâts sont " + mainCharacter.level * mainCharacter.weapon.damage);
 }
-}
-attack()
