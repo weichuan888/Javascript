@@ -152,6 +152,9 @@ var b = document.querySelector("a");
 b.style.color="blue";
 console.log(b.style.color="blue");
 
+
+var c = document.querySelector("orange");
+c.style.color("li") = "blue";
 /* pas fini*/
 
 // EXERCICE 5 : Création et suppression de plusieurs éléments
@@ -163,8 +166,12 @@ for (var i = 0; i < ordre.length; i++) {
 ordre.classList.removeChild();
 
 var qui = ["Silent Teacher", "Code Monkey", "Code Combat"];
+for (var i = 0; i < qui.length; i++) {
+  console.log(qui[i])
+var li = document.createElement("li");
+li.
 
-
+}
 
 
 
