@@ -35,10 +35,30 @@
 // }
 
 
-var yo = document.getElementsByTagName("hoverMe");
-  yo.addEventListerner("mouseover", function () {
-    yo.innerHTML = "disparu"
+var yo = document.querySelectorAll(".hoverMe");
+
+for (var i = 0; i < yo.length; i++) {
+  // console.log(yo[i])
+
+  yo[i].addEventListener("mouseover", function () {
+    this.classList.add("hidden");
   });
-  yo.addEventListerner("mouseout", function() {
-    yo.innerHTML = "boum"
-  });
+}
+
+
+
+
+
+
+var reset = document.querySelector("#reset");
+reset.addEventListener("click", function() {
+for (var i = 0; i < yo.length; i++) {
+    yo[i].classList.remove("hidden");
+    }
+});
+
+
+//   yo[i].addEventListener("mouseout", function() {
+//     this.classList.remove("hidden")
+//   });
+// }

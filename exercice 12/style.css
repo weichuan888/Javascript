@@ -1,3 +1,7 @@
 .hoverMe {
   border: 2px solid red;
 }
+
+.hidden {
+  opacity: 0;
+}
