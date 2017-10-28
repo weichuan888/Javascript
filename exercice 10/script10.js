@@ -93,7 +93,7 @@ meme couleur que le background-color...*/
 var liste = document.querySelector("ul");
 var point = document.createElement("li");
 var txt = document.createTextNode("Mon meilleur ami est <a href='http://www.google.com'>Google</a>")
-point.appendChild(txt);
+//point.appendChild(txt);
 
 // ajouter ce 'li' l'élément dans le ul
 // sélectionner le premier lien dans le 'li' précedement crée
@@ -113,7 +113,6 @@ for (var i = 0; i < ordre.length; i++) {
 }
 ordre.removeChild(ordre.childNodes[i])
 
-//interminé...
 
 //déclare dans un tableau les valuers suivantes : ["Silent Teacher","Code Monkey", "CodeCombat"]
 //faire une boucle sur tous les enfants du tableau précédement crée
