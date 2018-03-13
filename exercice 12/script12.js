@@ -62,3 +62,30 @@ for (var i = 0; i < yo.length; i++) {
 //     this.classList.remove("hidden")
 //   });
 // }
+
+
+
+// exercice 3
+//Faire de sorte que lorsque l'on bouge la souris dans la fenêtre, la position sois affiché dans les divs associés
+
+var horizontale = document.querySelector("#axe-x");
+var verticale = document.querySelector("#axe-y");
+horizontale.addEventListener("mousemove", function(mousemove){
+
+  horizontale.innerText = "axe x :" + mousemove.clientX;
+});
+
+verticale.addEventListener("mousemove", function(mousemove){
+  verticale.innerText= "axe y : " + mousemove.clientY;
+})
+
+
+
+/* on ajoute une coordonné avec l'écriture mousemove.clientX est une propriété
+qui renvoie les coordonnées de l'axe de x
+idem pour mousemove.clientY qui renvoie les coordonnées de l'axe de y.
+
+innertHtml => lire sur le Html
+innerText => lire les coordonnées dans le mot précédent.
+A revoir leur definitions !!!
+*/
