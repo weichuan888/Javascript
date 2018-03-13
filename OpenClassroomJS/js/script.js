@@ -32,6 +32,7 @@
 //     break;
 // }
 
+
 // var jour = prompt('Veuillez indiquer votre jour préféré');
 // switch (jour) {
 //   case "lundi":
@@ -74,3 +75,19 @@
 // else {
 //   console.log('ce mois compte 30 jours');
 // }
+
+
+// var manege = Number(prompt('Veuillez indiquer un chiffre svp'));
+// var tour = 1
+//
+// while (tour <= manege) {
+//   console.log("C'est le tour numéro " + tour);
+//   tour++;
+// }
+
+var chiffre = Number(prompt('Veuillez indiquer un numéro'));
+var affiche = 0;
+
+for (var affiche = 0; affiche <= chiffre; affiche++) {
+  console.log('Ce chiffre ' + affiche + ' est pair');
+}
