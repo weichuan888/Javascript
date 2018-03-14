@@ -85,9 +85,25 @@
 //   tour++;
 // }
 
-var chiffre = Number(prompt('Veuillez indiquer un numéro'));
-var affiche = 0;
+// var i = 0;
+// for ( i = 0; i <= 12; i++) {
+//   if (i % 2) {
+//     console.log(i + " est pair");
+//   }
+//   else {
+//     console.log(i + " est impair");
+//   }
+// }
 
-for (var affiche = 0; affiche <= chiffre; affiche++) {
-  console.log('Ce chiffre ' + affiche + ' est pair');
-}
+// var nombre = Number(prompt('Veuillez saisir un chiffre'))
+// var i = 0;
+//
+// for ( i = 0; i <=10; i++) {
+//   console.log(nombre + ' x ' + i + ' = ' + nombre*i);
+// }
+
+// var ouiNon = prompt('Voulez vous jouer a ni oui ni non');
+// while ((ouiNon != "oui") && (ouiNon!= "non")){
+//   var ouiNon = prompt('Vraiment ?')
+// }
+// console.log("perdu");
