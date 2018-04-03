@@ -20,23 +20,25 @@ function More() {
 
 function openNav() {
   var x = document.getElementById("barre-nav");
-  var y = document.getElementsByClassName("partieUn")[0];
-  document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
-
-  var tl = new TimelineMax();
-  tl.to(x, 0.3, { x: 250 }).to(y, 0.3, { x: 250, delay: -0.3 });
-  // x.style.width = "250px";
+  //x.style.width = "250px";
+  x.style.transform = "translateX(250px)";
   // document.getElementsByClassName("partieUn")[0].style.marginLeft = "250px";
+
+  /*  document.getElementsByClassName("partieUn")[0];
+  var tl = new TimelineMax();
+  tl.to(x, { x: -250 });
+  tl.to(y, { x: -250 });
+ */
   /*   document.getElementsByClassName("partieUn")[0].style.transform =
     "translateX(0px, 250px)"; */
 }
 
 function closeNav() {
   var x = document.getElementById("barre-nav");
-  var y = document.getElementsByClassName("partieUn")[0];
-  document.body.style.backgroundColor = "white";
-  var tl = new TimelineMax();
-  tl.to(x, 0.3, { x: -250 }).to(y, 0.3, { x: 0, delay: -0.3 });
+  x.style.width = "0";
+  // x.style.transform = "translateX(0px)";
+
+  document.getElementsByClassName("partieUn")[0].style.marginLeft = "0";
 
   // document.getElementsByClassName("partieUn")[0].style.transform =
   //   "translateX(-200px)";
@@ -48,7 +50,7 @@ function closeNav() {
 // utiliser getElementById next time pour le marginLeft, car ici il peut exister plusieurs classes, nous sommes donc
 // obligé de passer avec [0] pour spécifier qu'on veut le premier element, la classe considérait comme un array.
 
-function popup() {
+/* function popup() {
   var y = document.getElementById("pop");
   y.classList.toggle("show");
 }
@@ -60,3 +62,4 @@ function Scroll() {
     document.getElementById("headbar").style.top = "50px";
   }
 }
+ */

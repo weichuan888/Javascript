@@ -10,7 +10,6 @@ body {
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
-  transition: background-color 0.5s;
 }
 
 header {
@@ -77,16 +76,17 @@ nav {
   overflow-x: hidden;
   transition: 0.5s; */
   height: 100vh;
-  width: 0;
+  width: 0%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  /* transition: 0.5s; */
+  transition: 0.5s;
   padding-top: 60px;
   transform: translateX(0, 250px);
+  transition: left 300ms ease-in;
 }
 .closebtn {
   position: absolute;
@@ -103,7 +103,7 @@ nav ul {
   font-size: 25px;
   color: #818181;
   /* display: block; */
-  /* transition: 0.3s; */
+  transition: 0.3s;
   transform: translateX(0, 250px);
 }
 
@@ -136,7 +136,7 @@ nav .icones .fa-2x {
  */
   margin-left: auto;
   margin-right: auto;
-  /* transition: margin-left 0.5s; */
+  transition: margin-left 0.5s;
   padding: 0;
   margin-top: 50px;
   width: 80%;
@@ -145,17 +145,22 @@ nav .icones .fa-2x {
 }
 
 .partieUn #pop {
-  /*   visibility: hidden;
- */ /* visibility: visible; */
+  visibility: hidden;
+  /* visibility: visible; */
   background-color: green;
   color: black;
   border-radius: 5%;
   box-sizing: border-box;
+  padding-left: 20%;
 
   /* position: absolute;
   z-index: 1;
   left: 50%;
   top: 20%; */
+}
+.partieUn #pop::after {
+  content: "";
+  padding-left: 40%;
 }
 
 .show {
@@ -174,16 +179,17 @@ nav .icones .fa-2x {
   background-color: red;
 }
 
-#barre-nav {
+/* #barre-nav {
   position: absolute;
   width: 250px;
   left: -250px;
-}
-/* 
+} */
+
 .open-barre-nav {
   transform: translateX(250px);
+  transition: left 300ms ease-in;
 }
 
 .close-barre-nav {
   transform: translateX(0px);
-} */
+}
